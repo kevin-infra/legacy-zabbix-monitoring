@@ -5,6 +5,7 @@
 ## 구성 파일
 
 - `vagrant/Vagrantfile` - VM 3대(legacy-web / legacy-was / legacy-zabbix) 자동 생성 설정 (VMware Workstation + Vagrant)
+- `app/legacy-was/` - Spring Boot 2 최소 앱 소스코드 (legacy-was VM에 배포되는 WAS, Hello World + 부하 테스트용 API)
 - `작업명령어_로그.md` - 실습 중 사용한 명령어 전체 기록 (시간순, 파트별)
 - `docs/zabbix_monitoring_guide.md` - 설치 매뉴얼 (완성형, 팀 제출용)
 - `착수보고서_Zabbix모니터링_이건영.md` - 프로젝트 착수보고서
