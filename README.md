@@ -27,6 +27,7 @@
 | legacy-web | 웹서버(Apache) | 192.168.232.11 | 1GB / 1 vCPU |
 | legacy-was | Spring Boot 2 WAS | 192.168.232.12 | 2GB / 2 vCPU |
 | legacy-zabbix | Zabbix Server | 192.168.232.13 | 2GB / 2 vCPU |
+| legacy-nexus | Nexus Repository (폐쇄망 패키지 관리 실습, KAN-27) | 192.168.232.14 | 2GB / 2 vCPU |
 
 ## VM 실행 방법
 
