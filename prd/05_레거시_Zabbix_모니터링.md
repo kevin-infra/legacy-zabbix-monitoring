@@ -24,6 +24,8 @@ Kevin의 실무 경력(현대카드 인프라 모니터링, JENNIFER/ZABBIX 운�
 
 ### 4-1. 인프라 구축
 1. VM 3대 구성 확정(조장님 10/8 지시): ① 웹서버(Apache/nginx, 리버스 프록시) ② Spring Boot 2 WAS(JDK 11, Hello World + 부하용 API 1~2개만 — 비즈니스 로직 최소화) ③ Zabbix Server(+Java Gateway+Web UI)
+   - ✅ (10/10~10/11) `legacy-was` 포트 분리(old-corebank 8080 고정 / Hello World 30001) + `legacy-web` Apache 리버스 프록시(→ old-corebank) 구축·검증 완료 (PART 14 참조). SELinux(`httpd_can_network_connect`)·방화벽 Rich Rule·old-corebank 소스의 `127.0.0.1` 바인딩 등 3중 트러블슈팅 거침
+   - ⏳ 잔여: nginx 설치 및 Apache conf 구조 비교
 2. OS: Rocky Linux 8 고정. IP 대역은 팀과 맞출 필요 없음(완전 독립)
 3. (후속·조건부) Oracle DB는 Kevin이 임의 구성하지 않고, DB 담당 조원에게서 전달받은 뒤 설치 + Zabbix Oracle 모니터링 연동(Agent2 플러그인 또는 UserParameter+sqlplus 검토)
 
